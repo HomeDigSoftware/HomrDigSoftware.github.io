@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- font-family: 'Arimo', sans-serif;
+    font-family: 'Rubik Bubbles', cursive;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-family: 'Rubik Puddles', cursive;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-family: 'Suez One', serif;
+    font-family: 'Tinos', serif; -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet_Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Rubik+Bubbles&family=Rubik+Glitch&family=Rubik+Moonrocks&family=Rubik+Puddles&family=Rubik+Wet+Paint&family=Suez+One&family=Tinos:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form_style.css">
+</head>
+<nav>
+    <button>חיה אבודה</button>
+    <button>חפץ גנוב</button>
+    <button>תעלומה מסתורית</button>
+
+</nav>
+
+<body>
+    <main>
+        <h1>חיית מחמד אבודה</h1>
+        <form action="/111111">
+            <div class="User_Inpur">
+                <p>
+                    <input type="text" name="שם חיית המחמד" id="P_name" placeholder="שם החיה" required minlength="2"
+                        maxlength="12">
+                    <label for="P_name">שם החיה</label>
+                </p>
+                <p>
+                    <input type="text" name="שם הבעלים" id="O_name" placeholder="שם הבעלים" required minlength="2"
+                        maxlength="12">
+                    <label for="O_name">שם הבעלים</label>
+                </p>
+            </div>
+            <section>
+                <div id="P_Discreption" class="User_Inpur">
+                    <h2>סוג החיה</h2>
+
+                    <label for="P_select">בחר חיה מהרשימה</label>
+                    <select name="Pet_Select" id="P_select" required>
+                        <option value="">בחר חיה מהרשימה</option>
+                        <option value="כלב">כלב</option>
+                        <option value="חתול">חתול</option>
+                        <option value="תוקי">תוקי</option>
+                        <option value="נחש">נחש</option>
+                        <option value="לטאה">לטאה</option>
+                        <option value="פיל">פיל</option>
+                        <option value="דג">דג</option>
+                    </select>
+                    <!-- <button type="submit">שלח</button> -->
+                </div>
+                <div id="Time_Of_Missing" class="User_Inpur">
+                    <h2>משך העדרות</h2>
+                    <div>
+                        <input type="radio" name="T_Of_Miss" id="עד שבוע" value="עד שבוע" required>
+                        <label for="עד שבוע">עד שבוע </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="T_Of_Miss" id="שבוע עד חודש" value="שבוע עד חודש" required>
+                        <label for="שבוע עד חודש">שבוע עד חודש</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="T_Of_Miss" id="חודש ומעלה" value="חודש ומעלה" required>
+                        <label for="חודש ומעלה">חודש ומעלה</label>
+                    </div>
+
+                </div>
+                <div id="Contect_Info" class="User_Inpur">
+                    <h2>פרטיים לייצירת קשר</h2>
+
+                    <label for="costomer_email">המייל שלך</label>
+                    <input type="email" name="costomer_email" id="costomer_email" placeholder="השאר דואר אלקטרוני"
+                        required> <br>
+
+
+
+                    <label for="costomer_number">מספר טלפון לייצירת קשר</label>
+                    <input type="tel" name="costomer_number" id="costomer_number" placeholder="מספר טלפון" required>
+
+                </div>
+
+            </section>
+            <button type="submit" id="conferm_button">שלח</button>
+
+        </form>
+    </main>
+    <section></section>
+</body>
+
+</html>
